@@ -1,1 +1,1 @@
-# ngQuick
+# Angular Quick
