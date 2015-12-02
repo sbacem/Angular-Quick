@@ -1,0 +1,20 @@
+<div class="row clearfix">
+    <div class="col-md-12 column">
+    <div>
+      <h1>Angular formly</h1>
+      <hr />
+      <form ng-submit="ctrl.onSubmit()" name="ctrl.form" novalidate>
+        <formly-form model="ctrl.model" fields="ctrl.fields" options="ctrl.options">
+          <button type="submit" class="btn btn-primary submit-button" ng-disabled="ctrl.form.$invalid">Submit</button>
+        </formly-form>
+      </form>
+      <hr />
+      <h2>Model Value</h2>
+      <pre>{{ctrl.model | json}}</pre>
+      <h2>Fields <small>(note, functions are not shown)</small></h2>
+      <pre>{{ctrl.originalFields | json}}</pre>
+      <h2>Form</h2>
+      <pre>{{ctrl.form | json}}</pre>
+    </div>
+    </div>
+</div>
